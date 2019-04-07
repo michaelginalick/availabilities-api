@@ -6,8 +6,6 @@ class SlotsController < ApplicationController
     json_response(slots)
   end
 
-
-
   private
 
   def slot_params

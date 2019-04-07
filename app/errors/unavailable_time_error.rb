@@ -1,0 +1,1 @@
+class UnavailableTimeError < StandardError; end
