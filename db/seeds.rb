@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+20.times do
+  Slot.create!(start_time: Time.zone.now.strftime("%Y-%m-%d %H:%M:%S %z"),  
+  end_time: (Time.zone.now + 2.hours).strftime("%Y-%m-%d %H:%M:%S %z"))
+end
